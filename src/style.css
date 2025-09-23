@@ -71,9 +71,7 @@ body {
   height: 42px;
   background: #000000;         /* цвет фона кнопки */
   position: relative;
-  /* Скошенный нижний правый угол (2 способа — выбери один) */
-  /* Способ A: clip-path (проще всего) */
-   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 17.5px), calc(100% - 8px) 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 17.5px), calc(100% - 8px) 100%, 0 100%);
 }
 
 .address__search:hover {
@@ -106,12 +104,12 @@ body {
 }
 
 .hover-eye::before {
-    background: url('/public/eye\ 1.svg') center/cover;
+    background: url('/public/eye1.svg') center/cover;
     opacity: 1;
 }
 
 .hover-eye::after {
-    background: url('/public/eye\ 2.svg') center/cover;
+    background: url('/public/eye2.svg') center/cover;
     opacity: 0;
 }
 
@@ -403,7 +401,7 @@ body {
 }
 
 .hover-vk::before {
-    background: url('/public/picture/icons/vk\ dark.svg') center/cover;
+    background: url('/public/picture/icons/vkdark.svg') center/cover;
     opacity: 1;
 }
 
@@ -413,7 +411,7 @@ body {
 }
 
 .hover-youtube::before {
-    background: url('/public/picture/icons/youtube\ dark.svg') center/cover;
+    background: url('/public/picture/icons/youtubedark.svg') center/cover;
     opacity: 1;
 }
 
@@ -423,7 +421,7 @@ body {
 }
 
 .hover-instagram::before {
-    background: url('/public/picture/icons/instagram\ dark.svg') center/cover;
+    background: url('/public/picture/icons/instagramdark.svg') center/cover;
     opacity: 1;
 }
 
@@ -513,6 +511,10 @@ body {
   position: relataive;
   background-color: #FFFFFF;
   overflow-x: hidden;
+}
+
+.poster__title {
+  box-sizing: border-box;
 }
 
 .main__poster h1 {
@@ -1850,17 +1852,25 @@ body {
 
 
 .footer__about {
+  min-width: 320px;
   height: 45px;
   background-color: #000000;
   font-family: 'Muller';
   font-size: 12px;
   color: #ffffff;
-  padding: 0 10px;
 }
 
 .footer__about div {
-  max-width: 1200px
+  max-width: 1170px
 }
+
+ .footer__description {
+    margin: 0;
+  }
+
+  .footer__company {
+    margin: 0;
+  }
 
 @media (max-width: 1199.98px) { 
   .footer__description {
@@ -1890,8 +1900,6 @@ body {
     width: 100%;
     text-align: center;
   }
-
-
 }
 
 
