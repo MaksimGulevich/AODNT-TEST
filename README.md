@@ -1,1 +1,1 @@
-https://aodnt-page1-v3.vercel.app/
+https://github.com/MaksimGulevich/AODNT-TEST
